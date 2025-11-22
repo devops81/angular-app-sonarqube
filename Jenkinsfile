@@ -60,7 +60,7 @@ pipeline {
         }
        stage('Checkout Angular App') {
             steps {
-                //checkoutAngularApp('https://github.com/devops81/angular-app-sonarqube.git', 'C:/newcheckout')
+               checkoutAngularApp('https://github.com/devops81/angular-app-sonarqube.git', 'C:/newcheckout')
               echo "it's ok"
 
             }
