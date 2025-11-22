@@ -18,6 +18,11 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/devops81/angular-realworld-example-app.git' // Replace with your repository URL and branch
             }
         }
+       stage('Deploy') {
+            steps {
+                deployApp('angular-realworld-example-app')
+            }
+       }
        stage('Install Dependencies') {
             steps {
                 script {
