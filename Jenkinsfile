@@ -50,6 +50,7 @@ pipeline {
                 // Add your test commands here, e.g., `sh 'mvn test'`
             }
         }
+      
 
         stage('Deploy') {
             steps {
@@ -57,14 +58,15 @@ pipeline {
                 // Add your deployment commands here
             }
         }
-    }
-  stage('Checkout Angular App') {
+       stage('Checkout Angular App') {
             steps {
                 //checkoutAngularApp('https://github.com/devops81/angular-app-sonarqube.git', 'C:/newcheckout')
               echo "it's ok"
 
             }
         }
+    }
+ 
 
     post {
         success {
